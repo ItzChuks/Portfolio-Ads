@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="4/w3.css">
+ 
+ <style>
+  html, body {
+  overflow-x: hidden;
+}
+    .nav-link{
+      font-size: 150%;
+    }
+    li{
+    padding-left: 50px;
+    font-size: 15px;
+  }
+  
+  .navbar-toggler{
+    margin-top: -4%;
+      background-color: blue;
+      color: blue;
+  }
+  .aside1{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    margin-top: 0.5%;
+    margin-left: 3%;
+}
+.img1{
+    width: 100%;
+     height:500px;
+}
+.innertext{
+  transform: translateY(40px);
+}
+
+.grad-text {
+      font-size: 24px;
+      font-weight: bold;
+      background: linear-gradient(45deg, #ff8a00, #e52e71, #3498db, #2ecc71); /* Gradient colors */
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+
+#Text1{
+  font-size: 500%;
+}
+
+/* Basic button styles */
+.gradient-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      transition: background-color 0.6s, color 0.6s, border 0.6s;
+      background-color: #3498db; /* Default background color */
+      color: #fff; /* Default text color */
+      z-index: 1; /* Ensure text is above pseudo-element */
+    }
+
+    /* Gradient border effect */
+    .gradient-button:before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      border-radius: 5px;
+      box-sizing: border-box;
+      border: 2px solid transparent;
+      background: linear-gradient(45deg, #ff8a00, #e52e71, #3498db, #2ecc71); /* Gradient colors */
+      background-size: 400% 400%;
+      animation: gradientGlow 1.5s infinite;
+      z-index: -1; /* Place the pseudo-element behind the text */
+    }
+
+    /* Gradient border animation keyframes */
+    @keyframes gradientGlow {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+    #me {
+            position: relative;
+            overflow: hidden;
+            width: 400px; /* Adjust the width of the container */
+            height: 50px; /* Adjust the height of the container */
+            background: linear-gradient(120deg, #ff8a00, #e52e71, #3498db); 
+            margin-left: -0.5%;
+            border-radius: 5mm;
+            margin-top: -1.5%;
+        }
+        .glowing-text {
+          color: rgb(226, 222, 222);
+            position: absolute;
+            white-space: nowrap;
+            font-size: 24px;
+            font-weight: bold;
+            animation: slideAndGlow 4s linear infinite alternate; /* Adjust the duration as needed */
+        }
+        #cta{
+          font-size: 24px;
+        }
+        @keyframes slideAndGlow {
+            0%, 100% {
+                transform: translateX(-100%);
+                text-shadow: 0 0 10px #ff8a00, 0 0 20px #ff0000, 0 0 30px #ff0000;
+            }
+            50% {
+                transform: translateX(100%);
+                text-shadow: 0 0 10px #3498db, 0 0 20px #e52e71, 0 0 30px #00ff00;
+            }
+        }
+     
+     #About{
+        width: 90%;
+        height: auto;
+        background: linear-gradient(120deg, #ff8a00, #e52e71);
+        margin-top: 5%;
+        border-radius: 10mm;
+        padding: 0.3%;
+        display: flex;
+      }
+     
+     .img2{
+      width: 40%;
+      height: 500px;
+      border-radius: 10mm;
+     }
+     #a{
+      font-size: 20px;
+     }
+     #Skills{
+      width: 90%;
+        height: auto;
+        background: linear-gradient(120deg, #ff8a00, #e52e71);
+        margin-top: 5%;
+        border-radius: 10mm;
+        padding-bottom: 3%;
+     }
+     #ratings{
+      display: flex;
+     }
+     #chu{
+      margin-left: 40%;
+     }
+     #Projects{
+      width: 90%;
+        height: auto;
+        background: linear-gradient(120deg, #ff8a00, #e52e71);
+        margin-top: 5%;
+        border-radius: 10mm;
+        padding-bottom: 3%;
+     }
+     #Contact{
+      width: 100%;
+        height: auto;
+        background: linear-gradient(120deg, #ff8a00, #e52e71);
+        margin-top: 5%;
+        padding-bottom: 1%;
+     }
+     #boss2{
+      display: flex;
+      margin-top: 2%;
+     }
+      @media (max-width: 750px) {
+      
+      .aside1{
+        display: block;
+        margin-top: -10%;
+      }
+      #me{
+        width: 90%;
+        height: 40px;
+      }
+      #Text1{
+        font-size: 300%;
+      }
+      .img1{
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 80%;
+        height: auto;
+      }
+      .gradient-button{
+        height: 40px;
+      }
+      #cta{
+        font-size: 20px;
+      }
+      .img2{
+        display: none;
+      }
+      #a{
+        font-size: 15px;
+      }
+     #chu{
+      margin-left: 25%;
+     }
+     }
+
+     @media (max-width: 800px){
+       #ratings{
+        display: block;
+      }
+      #boss{
+        display: block;
+      }
+     }
+
+     @media screen and (max-width: 895px) and (min-width: 751px){
+      body{
+        overflow-x: hidden;
+      }
+      .aside1{
+        margin-top: -5%;
+      }
+      #Text1{
+        font-size: 200%;
+      }
+      body{
+        overflow-x: hidden;
+      }
+      #a{
+        font-size: 15.3px;
+      }
+      .img2{
+        margin-top: 1%;
+      }
+     }
+
+     @media screen and (max-width: 1040px) and (min-width: 896px){
+      #a{
+        font-size: 17px;
+      }
+     }
+ </style>
+<body style="background: linear-gradient(90deg, rgb(0, 0, 0), Purple);">
+  <nav class="navbar navbar-expand-lg " aria-label="Offcanvas navbar large">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html"><img src="Images/gee_prev_ui.png" width="95%" height="80px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div style="background: linear-gradient(270deg,  rgb(0, 0, 0), Purple);" class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasNavbar2Label">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#About"><b>About</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#Skills"><b>Skills</b></a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#Projects"><b>Projects</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#Contact"><b>Contacts</b></a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+ 
+    <aside class="aside1">
+      <div class="innertext"> 
+        <h1 class="text-white w3-animate-top" id="Text1">Hello,</h1>
+        <h1 class="text-white w3-animate-left" id="Text1">I am <span style="font-size: 100%; font-weight: bold; background: linear-gradient(45deg, #ff8a00, #e52e71, #3498db, #2ecc71);  background-clip: text; -webkit-background-clip: text; color: transparent; display: inline-block;">CHUKS</span></h1>
+        <h3 class="text-white w3-animate-right" >A Creative Front-end Developer & A Graphic Designer</h3><br>
+        <div class="container" id="me">
+          <div class="glowing-text">Welcome To My Portfolio</div>
+      </div><br>
+        <a href="#Projects" class="gradient-button"><b id="cta">Projects</b></a>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div><img src="Images/20231120_183101_prev_ui.png" class="img1 w3-animate-right"></div>
+    </aside>
+
+    <div class="container-fluid" id="About">
+      <img src="Images/About.jpg" class="img2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="container">
+        <h1 class="text-white"><b>ABOUT ME</b></h1>
+        <p class="text-white" id="a" >Hello!! I'm CHUKS, welcome to my portfolio! As a skilled front-end developer and graphic designer, I bring a unique blend of technical expertise and creative vision to every project. With a strong foundation in HTML, CSS, and JavaScript, I am adept at bringing designs to life with seamless functionality and intuitive user interfaces.</p>
+        <p class="text-white" id="a" >My passion for graphic design enables me to create visually stunning and impactful designs that not only look great but also effectively communicate the intended message. From user-friendly websites to captivating logos and branding materials, I strive to deliver designs that leave a lasting impression.</p>
+        <p class="text-white" id="a" >By choosing me, you can expect a dedicated professional who is committed to turning ideas into reality, paying close attention to detail, and ensuring a seamless user experience. Let's work together to elevate your digital presence and bring your creative visions to life.</p>
+    </div>
+  </div>
+  <div class="container-fluid" id="Skills">
+    <div class="container" style="margin-top: 2%;"><h3 class="text-white" ><b>Front-end Skills</b></h3></div>
+    <div class="container" id="ratings">
+      <div class="container">
+        <h5 class="text-white"><b>Tools</b></h5>
+            <h5 class="text-white"><img src="Images/icons8_pencil_30px.png">&nbsp;&nbsp;&nbsp;UI-UX Design</h5>
+            <p class="text-white">I design user-centered, visually appealing interfaces with a focus on accessibility. Proficient in wireframing, prototyping, and collaboration, i'm dedicated to creating seamless and delightful digital experiences.</p>
+            <h5 class="text-white"><img src="Images/icons8_source_code_24px.png">&nbsp;&nbsp;&nbsp;HTML, CSS & JavaScript</h5>
+            <p class="text-white">Experienced in HTML, CSS & JavaScript to create visually appealing, responsive, and interactive web interfaces. Passionate about crafting user-friendly websites.</p>
+            <h5 class="text-white"><img src="Images/icons8_monitor_26px.png">&nbsp;&nbsp;&nbsp;Bootstrap, jQuery, AngularJS (Frame-works)</h5>
+            <p class="text-white">Skilled in Boostrap for responsive design, jQuery for interactivity, and AngularJS for dynamic web apps.</p>
+      </div>
+      <div class="container">
+        <h5 class="text-white"><b>Coding ratings</b></h5>
+        <p class="text-white"><b>Figma</b></p>
+        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+        </div>
+        <p class="text-white"><b>HTML</b></p>
+        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+        </div>
+        <p class="text-white"><b>CSS</b></p>
+        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 96%">96%</div>
+        </div>
+        <p class="text-white"><b>JavaScript</b></p>
+        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+        </div>
+        <p class="text-white"><b>Boostrap</b></p>
+        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+        </div>
+        <p class="text-white"><b>jQuery</b></p>
+        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+        </div>
+        <p class="text-white"><b>AngularJS</b></p>
+        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
+        </div>
+      </div>
+    </div><br>
+      <div class="container"><h3 class="text-white" ><b>Graphic Designing Skills</b></h3></div>
+      <div class="container" id="ratings">
+        <div class="container" >
+          <h5 class="text-white"><img src="Images/icons8_paint_palette_24px.png">&nbsp;&nbsp;&nbsp;Corel Draw</h5>
+          <p class="text-white">I am skilled in crafting and captivating designs using CorelDraw, covering print and digital media. From branding to event materials, my work leaves a lasting impression.</p>
+          <h5 class="text-white"><img src="Images/icons8_adobe_photoshop_24px_1.png">&nbsp;&nbsp;&nbsp;Photoshop</h5>
+          <p class="text-white">I'm also a Photoshop expert who excels in digital art, photo editing, and creative design. From imaginative digital artworks to captivating branding collateral, I bring concepts to life.</p>
+        </div>
+        <div class="container">
+          <h2 class="text-white"><b>Design ratings</b></h2>
+          <br>
+          <p class="text-white"><b>CorelDraw</b></p>
+          <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+          </div>
+          <br>
+          <p class="text-white"><b>Photoshop</b></p>
+          <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+          </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="container-fluid album py-5 bg-body-tertiary" id="Projects">
+    <div class="container"><h1 class="text-white" ><b>Explore My Projects</b></h1></div>
+
+
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="Images/full-stack-development.gif" width="100%" height="225">
+            <div class="card-body">
+              <h4 class="card-text text-primary"><b>Web Dev.</b></h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="Web Dev.html"><button type="button" class="btn btn-sm btn-outline-primary">Explore</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="Images/uiux gif.gif" width="100%" height="225">
+            <div class="card-body">
+              <h4 class="card-text text-primary"><b>UI-UX designs</b></h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="#"><button type="button" class="btn btn-sm btn-outline-primary">Explore</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="Images/graphic-designing.gif" width="100%" height="225">
+            <div class="card-body">
+              <h4 class="card-text text-primary"><b>Graphic Design</b></h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="Graphic design.html"><button type="button" class="btn btn-sm btn-outline-primary">Explore</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+
+      <div class="container-fluid" id="Contact"> 
+        <div class="container"><h1 class="text-white"><b>Contact Me</b></h1></div>
+        <div class="container"><h3 class="text-white">Feel Free To Reach Out To Me Anytime, Don't Hesitate! 👇</h3></div>
+
+
+        <div class="container" id="boss">
+        <div class="container">
+         <div class="mb-3">
+          <form onsubmit="sendEmail(); reset(); return false;">
+            <label for="name" class="form-label text-white">Name</label>
+          <input type="text" class="form-control" name="name" id="name" placeholder="enter name" required><br>
+
+          <label for="phone" class="form-label text-white">Phone Number</label>
+          <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone number" required><br>
+
+
+            <label for="email" class="form-label text-white">Email address</label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" required><br>
+
+            <label for="message" class="form-label text-white">Message</label>
+           <textarea name="message" class="form-control" id="message" rows="4 " placeholder="Drop your message..." required></textarea><br>
+
+           <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+         </div>
+         <div class="mb-3" id="boss2">
+          <a href="#"><img src="Images/icons8_whatsapp_48px_1.png"></a>&nbsp;&nbsp;
+          <a href="#"><img src="Images/icons8_github_30px.png" width="150%"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#"><img src="Images/download.jpg" width="80%"></a>
+         </div>
+         </div>
+        </div>
+    </div>
+    
+</body>
+</html>

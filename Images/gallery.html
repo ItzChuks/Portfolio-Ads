@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="finalnav.css">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+
+  .row {
+    display: -ms-flexbox;
+    /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column {
+    -ms-flex: 50%;
+    /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+  /* Style the buttons */
+  /* .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+  } */
+
+  /* .btn:hover {
+    background-color: #ddd;
+  } */
+</style>
+
+<body style="background-color: black;">
+
+  <nav class="navbar navbar-expand-lg " aria-label="Offcanvas navbar large">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Home.html"><img src="Images/gee_prev_ui.png" width="95%" height="80px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div style="background: linear-gradient(150deg, rgb(10, 5, 71), Purple);" class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasNavbar2Label">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="#About"><b>About</b></a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="Portfolio.html"><b>Portfolio</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="Contact.html"><b>Contacts</b></a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- Header -->
+  <div class="header" id="myHeader">
+    <div class="container" style="height: 80px;"></div>
+    <h1 style="color: goldenrod;">HISTORICAL GALLERY</h1>
+    <h3 style="color: white;">Visit the <i>Info Gallery</i> page for the history behind the images </h3>
+    <p style="color: white;">Choose the number of columns with the buttons</p>
+    <button class="btn" onclick="one()">1</button>
+    <button class="btn" onclick="two()">2</button>
+    <button class="btn" onclick="four()">4</button>
+
+  </div>
+
+  <!-- Photo Grid -->
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="galleria/Abuzim.jpg" style="width:100%">
+        <img src="galleria/MountEverest.jpg" style="width:100%">
+        <img src="galleria/Abuzim6.jpg" style="width:100%">
+        <img src="galleria/Abuzim2.jpg" style="width:100%">
+        <img src="galleria/Christdredeemer2.jpg" style="width:100%">
+        <img src="galleria/Acropolis.3jpg.jpg" style="width:100%">
+        <img src="galleria/Acropolis7.jpg" style="width:100%">
+        <img src="galleria/Acropolis.5jpg.jpg" style="width:100%">
+        <img src="galleria/Chateau.jpg" style="width:100%">
+        <img src="galleria/Angkor5.jpg" style="width:100%">
+        <img src="galleria/Aprohodias.jpg" style="width:100%">
+        <img src="galleria/Ephesus1.jpg" style="width:100%">
+        <img src="galleria/Pyramid2.jpg" style="width:100%">
+        <img src="galleria/Aprohodias.jpg" style="width:100%">
+        <img src="galleria/Acropolis.jpg" style="width:100%">
+        <img src="galleria/Moai4.jpg" style="width:100%">
+        <img src="galleria/Mohenjo.jpg" style="width:100%">
+        <img src="galleria/Perspolis3.jpg" style="width:100%">
+        <img src="galleria/Greatzim2.jpg" style="width:100%">
+        <img src="galleria/Angkor2.jpg" style="width:100%">
+
+      </div>
+      <div class="column">
+        <img src="galleria/Colloseum2.jpg" style="width:100%">
+        <img src="galleria/Terracotaarmy2.jpg" style="width:100%">
+        <img src="galleria/Tajmahal2.jpg" style="width:100%">
+        <img src="galleria/Stonephage.jpg" style="width:100%">
+        <img src="galleria/Pyramid3.jpg" style="width:100%">
+        <img src="galleria/Sigiraya3.jpg" style="width:100%">
+        <img src="galleria/Pompeii.jpg" style="width:100%">
+        <img src="galleria/Alhambra3.jpg" style="width:100%">
+        <img src="galleria/Meteora3.jpg" style="width:100%">
+        <img src="galleria/Ephesus2.jpg" style="width:100%">
+        <img src="galleria/StonephAGE2.jpg" style="width:100%">
+        <img src="galleria/Himeji2.jpg" style="width:100%">
+        <img src="galleria/Carthage3.jpg" style="width:100%">
+        <img src="galleria/Carthage.jpg" style="width:100%">
+        <img src="galleria/Tiwaku.jpg" style="width:100%">
+        <img src="galleria/Tiwaku4.jpg" style="width:100%">
+        <img src="galleria/Mesa2.jpg" style="width:100%">
+        <img src="galleria/Kingkaku2.jpg" style="width:100%">
+        <img src="galleria/Kingkaku3.jpg" style="width:100%">
+        <img src="galleria/Sigiraya.jpg" style="width:100%">
+
+
+      </div>
+      <div class="column">
+        <img src="galleria/intajmahaL.jpg" style="width:100%">
+        <img src="galleria/greatwall2.jpg" style="width:100%">
+        <img src="galleria/Petra2.jpg" style="width:100%">
+        <img src="galleria/Colloseum3.jpg" style="width:100%">
+        <img src="galleria/Palmyra2.jpg" style="width:100%">
+        <img src="galleria/Aprohodias3.jpg" style="width:100%">
+        <img src="galleria/Acropolis9.jpg" style="width:100%">
+        <img src="galleria/Aprohodias5.jpg" style="width:100%">
+        <img src="galleria/Pompeii2.jpg" style="width:100%">
+        <img src="galleria/Perspolis3.jpg" style="width:100%">
+        <img src="galleria/Angkor6.jpg" style="width:100%">
+        <img src="galleria/Pompeii.jpg" style="width:100%">
+        <img src="galleria/Perspolis.jpg" style="width:100%">
+        <img src="galleria/MountEverest3.jpg" style="width:100%">
+        <img src="galleria/Alhambra4.jpg" style="width:100%">
+        <img src="galleria/Alhambra.jpg" style="width:100%">
+        <img src="galleria/Mesa.jpg" style="width:100%">
+        <img src="Tajmahal (1).jpg" style="width:100%">
+        <img src="galleria/Tikal.jpg" style="width:100%">
+        <img src="galleria/Tikal3.jpg" style="width:100%">
+
+      </div>
+      <div class="column">
+        <img src="galleria/Kingkaku2.jpg" style="width:100%">
+        <img src="galleria/Kingkaku.jpg" style="width:100%">
+        <img src="galleria/Acropolis6.jpg" style="width:100%">
+        <img src="galleria/Acropolis9.jpg" style="width:100%">
+        <img src="galleria/petra.jpg" style="width:100%">
+        <img src="galleria/Palmyra3.jpg" style="width:100%">
+        <img src="galleria/Borobodu.jpg" style="width:100%">
+        <img src="galleria/Borobodu4.jpg" style="width:100%">
+        <img src="galleria/Alhambra.jpg" style="width:100%">
+        <img src="galleria/Mesa2.jpg" style="width:100%">
+        <img src="galleria/Himeji.jpg" style="width:100%">
+        <img src="galleria/Greatzim4.jpg" style="width:100%">
+        <img src="galleria/machu2.jpg" style="width:100%">
+        <img src="galleria/Himeji3.jpg" style="width:100%">
+        <img src="galleria/Himeji4.jpg" style="width:100%">
+        <img src="galleria/Carthage.jpg" style="width:100%">
+        <img src="galleria/Borobodu3.jpg" style="width:100%">
+        <img src="galleria/Nazca3.jpg" style="width:100%">
+        <img src="galleria/Nazca.jpg" style="width:100%">
+        <img src="galleria/Chateau2.jpg" style="width:100%">
+      </div>
+
+    </div>
+
+    <h6 style="color: white; text-align: center; margin-top: 2rem;">To get more info visit the info gallery page</h6>
+  </div>
+
+  <div class="container" style="color: white;">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top" style="color: white;">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <img src="tw-logo.jpg" alt="No image" style="height: 50px;">
+        <p class="text-body-secondary text-reset" style="color: goldenrod;"><i>&copy; 2023</i></p>
+      </div>
+
+      <div class="col mb-3">
+
+      </div>
+
+      <div class="col mb-3" style="color: goldenrod;">
+        <h5>COMPANY</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary text-reset">Contact Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary text-reset">About Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary text-reset">Sponsorship</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary text-reset">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary text-reset">Blogs</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3" style="color: goldenrod;">
+        <h5>LEARN MORE</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://app.milanote.com/1R54pm1EZfxd0x?p=BXvrqIeFB78"
+              class="nav-link p-0 text-body-secondary text-reset">SiteMap</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary text-reset">Privacy</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary text-reset">Virtual Tour
+              Guide</a></li>
+          <li class="nav-item mb-2 text-reset"><a href="#" class="nav-link p-0 text-body-secondary text-reset">Terms</a>
+          </li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary text-reset">About</a></li>
+        </ul>
+      </div>
+
+
+      <div class="col mb-3">
+        <h5 style="color: goldenrod;">Follow Us</h5>
+        <a class="social-icon" href="https://facebook.com/gloria bassey">
+          <ion-icon name="logo-facebook"></ion-icon>
+
+        </a>
+        <a class="social-icon" href="https://twitter.com">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a class="social-icon" href="https://linkedin.com">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a class="social-icon" href="https://Instagram">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the elements with class="column"
+    var elements = document.getElementsByClassName("column");
+
+    // Declare a loop variable
+    var i;
+
+    // Full-width images
+    function one() {
+      for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "100%";  // IE10
+        elements[i].style.flex = "100%";
+      }
+    }
+
+    // Two images side by side
+    function two() {
+      for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "50%";  // IE10
+        elements[i].style.flex = "50%";
+      }
+    }
+
+    // Four images side by side
+    function four() {
+      for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "25%";  // IE10
+        elements[i].style.flex = "25%";
+      }
+    }
+
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myHeader");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+
+
+</body>
+
+</html>
